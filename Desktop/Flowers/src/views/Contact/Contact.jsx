@@ -1,8 +1,12 @@
 import "./Contact.css"
+import Navbar from "../../components/Navbar/Navbar"
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <Navbar />
+      <div>Contact</div>
+    </div>
   )
 }
 
