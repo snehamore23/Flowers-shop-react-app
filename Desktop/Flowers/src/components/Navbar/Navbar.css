@@ -1,0 +1,28 @@
+.navbar{
+    background-color: rgb(224, 133, 164);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.menu-item{
+    text-decoration: none;
+    color: rgb(108, 50, 50);
+    display: inline-flex;
+    margin: 0% 20px;
+    align-items: center;
+}
+.menu-item:hover{
+    color: rgb(150, 102, 102);
+transform: 0.3s;
+}
+.menu-icon{
+    height:60px;
+    width: 60px;
+}
+.active-menu{
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+    position: relative;
+    top: 2px;
+}
