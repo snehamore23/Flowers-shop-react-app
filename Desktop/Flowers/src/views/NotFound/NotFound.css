@@ -1,0 +1,169 @@
+.notfound-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(180deg, #fff5f8 0%, #fce8ef 55%, #fff 100%);
+}
+
+.notfound-card {
+  width: min(960px, 100%);
+  background: #ffffff;
+  border: 1px solid #f3d9e4;
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(167, 77, 115, 0.12);
+  padding: 2.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #d96f8c;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.notfound-card h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.7rem;
+  letter-spacing: -0.04em;
+  color: #3e2b35;
+}
+
+.notfound-card p {
+  margin: 0 0 1.75rem;
+  line-height: 1.8;
+  color: #6c5264;
+  font-size: 1rem;
+}
+
+.game-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-header strong {
+  color: #59343f;
+}
+
+.target-flower {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff0f4;
+  border: 1px solid #f2c7d7;
+  color: #962d56;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+}
+
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.flower-button {
+  border: 1px solid #f3d9e4;
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.2rem;
+  display: grid;
+  place-items: center;
+  gap: 0.55rem;
+  color: #5a3a49;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.flower-button:hover {
+  transform: translateY(-3px);
+  border-color: #e9b6ca;
+  box-shadow: 0 12px 28px rgba(209, 109, 140, 0.16);
+}
+
+.flower-button.selected {
+  background: #fde8ee;
+  border-color: #e8b7cb;
+}
+
+.flower-button.correct {
+  background: #ffedf2;
+  border-color: #df8ca8;
+}
+
+.flower-emoji {
+  font-size: 2rem;
+}
+
+.game-message {
+  margin: 0 0 1.75rem;
+  color: #5f3d4f;
+  font-weight: 600;
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.retry-button,
+.home-link {
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.retry-button {
+  border: none;
+  background: #c85d76;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.retry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(200, 93, 118, 0.24);
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #f3d9e4;
+  color: #9d4569;
+}
+
+@media (max-width: 880px) {
+  .flower-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .notfound-card {
+    padding: 1.75rem;
+  }
+
+  .flower-grid {
+    grid-template-columns: 1fr;
+  }
+}

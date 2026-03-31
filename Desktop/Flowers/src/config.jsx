@@ -101,4 +101,6 @@ const PRODUCTS=[
 }
 ];
 
+export {PRODUCTS};
+
    
