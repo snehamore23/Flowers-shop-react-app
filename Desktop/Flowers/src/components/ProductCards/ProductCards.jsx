@@ -9,9 +9,9 @@ function ProductCards() {
         title="Welcome to our Flowers Shop!"
         subtitle="Discover our beautiful collection of flowers"
       />
-      <p>
+      {/* <p>
         Discover a wide variety of beautiful flowers for every occasion. From vibrant roses to elegant lilies, we have the perfect blooms to brighten your day. Explore our collection and find the perfect bouquet for your loved ones or yourself.
-      </p>
+      </p> */}
       <div className="products-containers">
         {PRODUCTS.map((product) => (
           <div className="product-container" key={product.id}>
